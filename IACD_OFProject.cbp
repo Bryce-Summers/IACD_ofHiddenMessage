@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IACD_OFProject" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Release" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Debug\" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="..\..\..\libs\glu\include" />
+			<Add directory="..\..\..\libs\freetype\include" />
+			<Add directory="..\..\..\libs\freetype\include\freetype2" />
+			<Add directory="..\..\..\libs\FreeImage\include" />
+			<Add directory="..\..\..\libs\quicktime\include" />
+			<Add directory="..\..\..\libs\rtAudio\include" />
+			<Add directory="..\..\..\libs\fmodex\include" />
+			<Add directory="..\..\..\libs\videoInput\include" />
+			<Add directory="..\..\..\libs\glew\include" />
+			<Add directory="..\..\..\libs\glut\include" />
+			<Add directory="..\..\..\libs\glfw\include" />
+			<Add directory="..\..\..\libs\openFrameworks" />
+			<Add directory="..\..\..\libs\openFrameworks\3d" />
+			<Add directory="..\..\..\libs\openFrameworks\app" />
+			<Add directory="..\..\..\libs\openFrameworks\communication" />
+			<Add directory="..\..\..\libs\openFrameworks\events" />
+			<Add directory="..\..\..\libs\openFrameworks\gl" />
+			<Add directory="..\..\..\libs\openFrameworks\graphics" />
+			<Add directory="..\..\..\libs\openFrameworks\math" />
+			<Add directory="..\..\..\libs\openFrameworks\sound" />
+			<Add directory="..\..\..\libs\openFrameworks\types" />
+			<Add directory="..\..\..\libs\openFrameworks\utils" />
+			<Add directory="..\..\..\libs\openFrameworks\video" />
+			<Add directory="..\..\..\libs\poco\include" />
+			<Add directory="..\..\..\libs\tess2\include" />
+			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="../../../addons/ofxArcText-master/libs" />
+			<Add directory="../../../addons/ofxArcText-master/src" />
+			<Add directory="../../../addons\ofxArcText-master\src" />
+			<Add directory="../../../addons/ofxFluid-master/libs" />
+			<Add directory="../../../addons/ofxFluid-master/src" />
+			<Add directory="../../../addons\ofxFluid-master\src" />
+			<Add directory="../../../addons/ofxFX-master/libs" />
+			<Add directory="../../../addons/ofxFX-master/src" />
+			<Add directory="../../../addons\ofxFX-master\src" />
+			<Add directory="../../../addons\ofxFX-master\src\composers" />
+			<Add directory="../../../addons\ofxFX-master\src\filters" />
+			<Add directory="../../../addons\ofxFX-master\src\generative" />
+			<Add directory="../../../addons\ofxFX-master\src\operations" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\glfw\lib\win_cb\libglfw3.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNetSSL.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoCrypto.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libssl.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libcrypto.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;" />
+			<Add after="cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src\main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\ofApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\ofApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+		<Unit filename="../../../addons\ofxArcText-master\src\ofxArcText.cpp">
+			<Option virtualFolder="addons\ofxArcText-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxArcText-master\src\ofxArcText.h">
+			<Option virtualFolder="addons\ofxArcText-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFluid-master\src\ofxFluid.cpp">
+			<Option virtualFolder="addons\ofxFluid-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFluid-master\src\ofxFluid.h">
+			<Option virtualFolder="addons\ofxFluid-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\composers\ofxBlend.h">
+			<Option virtualFolder="addons\ofxFX-master\src\composers" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\composers\ofxClone.h">
+			<Option virtualFolder="addons\ofxFX-master\src\composers" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\composers\ofxMask.h">
+			<Option virtualFolder="addons\ofxFX-master\src\composers" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\composers\ofxMultiTexture.h">
+			<Option virtualFolder="addons\ofxFX-master\src\composers" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxBarrelChromaAb.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxBloom.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxBlur.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxBokeh.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxChromaAb.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxChromaGlitch.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxContrast.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxGaussianBlur.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxGlow.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxGrayscale.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxInverse.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxLUT.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxMedian.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\filters\ofxOldTv.h">
+			<Option virtualFolder="addons\ofxFX-master\src\filters" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\generative\ofxFBM.h">
+			<Option virtualFolder="addons\ofxFX-master\src\generative" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\generative\ofxFire.h">
+			<Option virtualFolder="addons\ofxFX-master\src\generative" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\generative\ofxGrayScott.h">
+			<Option virtualFolder="addons\ofxFX-master\src\generative" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\generative\ofxNoise.h">
+			<Option virtualFolder="addons\ofxFX-master\src\generative" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\generative\ofxTint.h">
+			<Option virtualFolder="addons\ofxFX-master\src\generative" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\ofxFX.h">
+			<Option virtualFolder="addons\ofxFX-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\ofxFXObject.cpp">
+			<Option virtualFolder="addons\ofxFX-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\ofxFXObject.h">
+			<Option virtualFolder="addons\ofxFX-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\ofxSwapBuffer.h">
+			<Option virtualFolder="addons\ofxFX-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxAbsDiff.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxBounce.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxDisplacePixels.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxEdgeDetect.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxFlow.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxNormals.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxRipples.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxSubstract.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFX-master\src\operations\ofxThreshold.h">
+			<Option virtualFolder="addons\ofxFX-master\src\operations" />
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
